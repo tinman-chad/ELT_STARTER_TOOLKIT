@@ -94,7 +94,7 @@ if(__name__ == "__main__"):
     servertypename = os.environ['SVR_TYPE']
     db_str = f'{servertypename}://{uid}:{pwd}@{server}:{port}/{db}'
     #sql db details
-    driver = "{SQL Server Native Client 11.0}"
+    driver = "{SQL Server Native Client 11.0}"  #could just store this into the servertype variable and add logic to check to SQL Server in the string to tell it how to build the conenction string...
     source_server = "./"
     database = "databasename"
     table = "table"
